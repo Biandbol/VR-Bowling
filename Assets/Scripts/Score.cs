@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Text = TMPro.TextMeshProUGUI;
+using UnityEngine.SceneManagement;
 
 
 public class Score : MonoBehaviour
@@ -48,6 +49,8 @@ public class Score : MonoBehaviour
     public void replay()
     {
         scoreText.text = "Score: ";
+        SceneManager.LoadScene(0);
+
 
     }
     void UpdateScoreUI()
